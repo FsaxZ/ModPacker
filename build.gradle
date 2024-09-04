@@ -1,0 +1,27 @@
+plugins {
+	id 'eclipse'
+	id 'java'
+}
+
+repositories {
+	mavenCentral()
+	maven {
+		name 'Jitpack'
+		url 'https://jitpack.io'
+	}
+}
+
+dependencies{
+		implementation 'com.github.leewyatt:rxcontrols:11.0.3'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/java']
+       	 			}
+        resources {
+            srcDirs = ['src/resources']
+        			}
+   		 }
+}
